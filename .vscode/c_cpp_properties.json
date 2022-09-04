@@ -1,18 +1,36 @@
 {
     "configurations": [
         {
-            "name": "Mac",
+            "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**",
-                "/usr/local/Cellar/gcc/10.2.0_4/include/c++/10.2.0"
+                "${workspaceFolder}/**"
             ],
             "defines": [],
-            "macFrameworkPath": [],
-            "compilerPath": "/usr/local/bin/gcc-10",
-            "cStandard": "gnu17",
+            "cStandard": "c11",
             "cppStandard": "gnu++14",
-            "intelliSenseMode": "macos-gcc-x64"
-        }
+            "intelliSenseMode": "gcc-x64"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "gcc-x64"
+        },
+        {
+            "name": "Mac",
+            "includePath": ["${workspaceFolder}/**"],
+            "defines": [],
+            "cStandard": "c11",
+            "intelliSenseMode": "clang-x64"
+          }
     ],
     "version": 4
 }
