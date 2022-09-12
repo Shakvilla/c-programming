@@ -4,14 +4,14 @@
 
 int main(void)
 {
-  float x;
+  int x;
 
   printf("Enter number: \n");
-  scanf("%2f", &x);
+  scanf("%d", &x);
 
   while(x < 100)
   {
-    printf("%f", x);
+    printf("%d \n", x);
     x++;
   }
   return (0);
